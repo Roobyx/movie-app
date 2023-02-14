@@ -1,4 +1,4 @@
-# movie-app
+# Movie Wizard Suite
 
 ## TODO:
 
