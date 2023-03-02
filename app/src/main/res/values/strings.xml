@@ -3,4 +3,9 @@
     <string name="title_Movies">Movies</string>
     <string name="title_tvshows">TV Shows</string>
     <string name="title_favorites">Favorites</string>
+    <string name="text_search">Search</string>
+    <string name="text_filter">Filters</string>
+    <string name="text_sort">Sort by</string>
+    <!--    Genres -->
+    <string name="genre_comedy">Comedy</string>
 </resources>
