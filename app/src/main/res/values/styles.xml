@@ -10,8 +10,7 @@
     <style name="fragmentBackground">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:paddingHorizontal">@dimen/default_padding</item>
-        <item name="android:paddingTop">@dimen/default_padding</item>
+        <!--        <item name="android:paddingHorizontal">@dimen/default_padding</item>-->
         <item name="android:background">@color/light_gray</item>
     </style>
 
@@ -53,7 +52,14 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center_vertical</item>
-        <item name="android:layout_marginEnd">@dimen/small_margin</item>
+        <item name="android:layout_marginEnd">@dimen/small_divider</item>
         <item name="android:src">@drawable/ic_start_empty</item>
+    </style>
+
+    <style name="CornerCut" parent="">
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerSizeTopLeft">12dp</item>
+        <item name="cornerSizeBottomLeft">12dp</item>
     </style>
 </resources>

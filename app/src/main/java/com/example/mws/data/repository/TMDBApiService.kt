@@ -59,6 +59,10 @@ interface TMDBApiService {
 	@GET("movie/76341")
 	fun getMovieAsync(@Path("key") apiKey: String):
 			Deferred<Movie>
+
+	@GET("configuration")
+	fun getConfiguration():
+			Deferred<String>
 }
 
 object TMDBApi {

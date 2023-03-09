@@ -16,9 +16,9 @@ class MoviesViewModel : ViewModel() {
 	val response: LiveData<String>
 		get() = status
 
-	private val _movie = MutableLiveData<List<Movie>>()
+	private val _moviesCollection = MutableLiveData<List<Movie>>()
 	val movie: LiveData<List<Movie>>
-		get() = _movie
+		get() = _moviesCollection
 
 	private var viewModelJob = Job()
 	private val couroutineScope = CoroutineScope(viewModelJob + Dispatchers.Main)
@@ -41,14 +41,11 @@ class MoviesViewModel : ViewModel() {
 						"with_watch_monetization_types" to "flatrate"
 					)
 				)
-//			Log.i("debug", "Sending------------>: ?api_key=${BuildConfig.TMDB_KEY}")
 			try {
 				val result = getMovieCollectionDeferred.await()
-//				Log.i("debug", "=======>" + result.results?.get(0).toString())
-				if (result.results?.isNotEmpty() == true) _movie.value = result.results.orEmpty()
-//				status.value = "Success:  Got ${result.results?.size} movies"
+				if (result.results?.isNotEmpty() == true) _moviesCollection.value =
+					result.results.orEmpty()
 			} catch (t: Throwable) {
-//				status.value = "Failure: " + t.message
 				Log.i("debug", "Catching: ${t.message}")
 			}
 		}

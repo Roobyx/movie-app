@@ -9,4 +9,5 @@
     <!--    Genres -->
     <string name="genre_comedy">Comedy</string>
     <string name="add_to_favorites">Add to favorites</string>
+    <string name="rating">Rating</string>
 </resources>

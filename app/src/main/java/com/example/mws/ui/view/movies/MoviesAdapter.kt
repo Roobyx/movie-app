@@ -13,6 +13,7 @@ class MoviesAdapter : RecyclerView.Adapter<MediaItemViewHolder>() {
 	var data = listOf<Movie>()
 		set(value) {
 			field = value
+//			TODO: Change
 			notifyDataSetChanged()
 		}
 
