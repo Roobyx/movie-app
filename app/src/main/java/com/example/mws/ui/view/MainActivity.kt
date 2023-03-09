@@ -3,6 +3,8 @@ package com.example.mws.ui.view
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.navigation.NavController
+import androidx.navigation.NavDestination
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.mws.R
@@ -15,11 +17,8 @@ class MainActivity : AppCompatActivity() {
 
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
-		Thread.sleep(2000)
+//		Thread.sleep(2000)
 		val splashScreen = installSplashScreen()
-
-//		Delay the splashscreen until data is fetched:
-//		splashScreen.setKeepOnScreenCondition()
 
 		binding = ActivityMainBinding.inflate(layoutInflater)
 		setContentView(binding.root)
@@ -27,13 +26,9 @@ class MainActivity : AppCompatActivity() {
 		navView.itemIconTintList = null
 
 		val navController = findNavController(R.id.navigationHostMainActivity)
-//		val appBarConfiguration = AppBarConfiguration(
-//			setOf(
-//				R.id.navigation_movies, R.id.navigation_tvshows, R.id.navigation_favorites
-//			)
-//		)
-
-//		setupActionBarWithNavController(navController, appBarConfiguration)
+		navController.addOnDestinationChangedListener { nc: NavController, nd: NavDestination, bundle: Bundle? ->
+			binding.appBarTitle.text = nd.label
+		}
 		navView.setupWithNavController(navController)
 	}
 }
