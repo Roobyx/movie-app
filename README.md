@@ -43,32 +43,34 @@
 
 2. ### ~~__Screens__~~
 
-~~- Splash screen~~
-~~- Movies~~
+- ~~Splash screen~~
+- ~~Movies~~
 - TV Shows
 - Favorites
 
 # 2. Planned Tasks:
 
 - Create app layout and design
-    ~~- Create navigation~~
+    - ~~Create navigation~~
         - ~~Create bottom navigation~~
-    ~~- Create header~~
+    - ~~Create header~~
 
 - Get data for N entities objects (prefeably while splash screen is loading)
-    ~~- Call api~~
+    - ~~Call api~~
     - ~~Create splashcreen~~
 
 - Display a scrollble list of entity objects
-    ~~- Use Recycler view~~
-    ~~- Create movie preview item layout and design~~
+    - ~~Use Recycler view~~
+    - ~~Create movie preview item layout and design~~
     - Create filter
 
 - Create a dedicated entity page
-    ~~- Create layout and design~~
+
+    - ~~Create layout and design~~
 
 - Create favorites page
-    ~~- Create thumbnail view~~
+
+    - ~~Create thumbnail view~~
     - Create side scrolling tracks
 
 - Various additional tasks
