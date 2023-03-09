@@ -1,4 +1,4 @@
-package com.example.mws.ui.tvshows
+package com.example.mws.ui.view.tvshows
 
 import android.annotation.SuppressLint
 import android.os.Bundle

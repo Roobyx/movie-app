@@ -1,10 +1,11 @@
-package com.example.mws
+package com.example.mws.ui.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
+import com.example.mws.R
 import com.example.mws.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 

@@ -1,4 +1,4 @@
-package com.example.mws.ui.favorites
+package com.example.mws.ui.view.favorites
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -20,7 +20,7 @@ class FavoritesFragment : Fragment() {
 	override fun onCreateView(
 		inflater: LayoutInflater,
 		container: ViewGroup?,
-		savedInstanceState: Bundle?
+		savedInstanceState: Bundle?,
 	): View {
 		val favoritesViewModel =
 			ViewModelProvider(this)[FavoritesViewModel::class.java]
@@ -30,7 +30,7 @@ class FavoritesFragment : Fragment() {
 
 		val textView: TextView = binding.textFavorites
 		favoritesViewModel.text.observe(viewLifecycleOwner) {
-			textView.text = it 
+			textView.text = it
 		}
 		return root
 	}

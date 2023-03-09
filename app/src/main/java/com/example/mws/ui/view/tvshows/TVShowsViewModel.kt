@@ -1,13 +1,13 @@
-package com.example.mws.ui.movies
+package com.example.mws.ui.view.tvshows
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class MoviesViewModel : ViewModel() {
+class TVShowsViewModel : ViewModel() {
 
 	private val _text = MutableLiveData<String>().apply {
-		value = "This is movies Fragment"
+		value = "This is TV Shows Fragment"
 	}
 	val text: LiveData<String> = _text
 }

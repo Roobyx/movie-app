@@ -5,4 +5,6 @@
     <dimen name="small_margin">8dp</dimen>
     <dimen name="default_padding">14dp</dimen>
     <dimen name="margin_default_ic_text">11dp</dimen>
+    <dimen name="smallElementMargin">2dp</dimen>
+    <dimen name="medium_margin">6dp</dimen>
 </resources>

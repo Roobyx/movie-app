@@ -2,12 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ui.tvshows.TVShowsFragment"
     style="@style/fragmentBackground"
-    >
+    tools:context=".ui.view.tvshows.TVShowsFragment">
 
     <TextView
         android:id="@+id/text_tvshows"
+        style="@style/GlobalText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/small_margin"
