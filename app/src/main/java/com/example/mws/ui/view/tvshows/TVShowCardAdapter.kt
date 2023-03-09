@@ -1,16 +1,16 @@
-package com.example.mws.ui.view.movies
+package com.example.mws.ui.view.tvshows
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mws.R
-import com.example.mws.data.model.Movie
+import com.example.mws.data.model.TVShow
 import com.example.mws.databinding.MediaElementBinding
-import com.example.mws.utils.MediaItemViewHolder
+import com.example.mws.utils.TVShowCardViewHolder
 
-class MoviesAdapter : RecyclerView.Adapter<MediaItemViewHolder>() {
-	var data = listOf<Movie>()
+class TVShowCardAdapter : RecyclerView.Adapter<TVShowCardViewHolder>() {
+	var data = listOf<TVShow>()
 		set(value) {
 			field = value
 //			TODO: Change
@@ -19,15 +19,15 @@ class MoviesAdapter : RecyclerView.Adapter<MediaItemViewHolder>() {
 
 	override fun getItemCount(): Int = data.size
 
-	override fun onBindViewHolder(holder: MediaItemViewHolder, position: Int) {
+	override fun onBindViewHolder(holder: TVShowCardViewHolder, position: Int) {
 		val item = data[position]
 		holder.bind(item)
 	}
 
-	override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MediaItemViewHolder {
+	override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TVShowCardViewHolder {
 		val layoutInflater = LayoutInflater.from(parent.context)
 		val view = layoutInflater.inflate(R.layout.media_element, parent, false) as ConstraintLayout
-		return MediaItemViewHolder(MediaElementBinding.bind(view))
+		return TVShowCardViewHolder(MediaElementBinding.bind(view))
 	}
 
 }

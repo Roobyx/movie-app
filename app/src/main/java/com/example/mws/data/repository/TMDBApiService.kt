@@ -1,7 +1,8 @@
 package com.example.mws.data.repository
 
 import com.example.mws.BuildConfig
-import com.example.mws.data.model.DiscoveredCollection
+import com.example.mws.data.model.DiscoveredMovieCollection
+import com.example.mws.data.model.DiscoveredTVShowCollection
 import com.example.mws.data.model.Movie
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import com.squareup.moshi.Moshi
@@ -54,7 +55,13 @@ interface TMDBApiService {
 	fun getMovieCollectionAsync(
 		@QueryMap options: Map<String, String>,
 	):
-			Deferred<DiscoveredCollection>
+			Deferred<DiscoveredMovieCollection>
+
+	@GET("discover/tv")
+	fun getTvShowsCollectionAsync(
+		@QueryMap options: Map<String, String>,
+	):
+			Deferred<DiscoveredTVShowCollection>
 
 	@GET("movie/76341")
 	fun getMovieAsync(@Path("key") apiKey: String):

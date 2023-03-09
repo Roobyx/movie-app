@@ -45,7 +45,7 @@
 
 - ~~Splash screen~~
 - ~~Movies~~
-- TV Shows
+- ~~TV Shows~~
 - Favorites
 
 # 2. Planned Tasks:

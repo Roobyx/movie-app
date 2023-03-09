@@ -12,9 +12,6 @@ import com.example.mws.R
 import com.example.mws.databinding.FragmentMoviesBinding
 
 class MoviesFragment : Fragment() {
-//	private var _binding: FragmentMoviesBinding? = null
-//	private val binding get() = _binding!!
-
 	override fun onCreateView(
 		inflater: LayoutInflater,
 		container: ViewGroup?,
@@ -30,10 +27,9 @@ class MoviesFragment : Fragment() {
 		binding.viewModel = moviesViewModel
 		binding.lifecycleOwner = this
 
-//		_binding = FragmentMoviesBinding.inflate(inflater, container, false)
 		val root: View = binding.root
 
-		val adapter = MoviesAdapter()
+		val adapter = MovieCardAdapter()
 		binding.moviesList.adapter = adapter
 
 		moviesViewModel.movie.observe(viewLifecycleOwner, Observer {
@@ -42,17 +38,7 @@ class MoviesFragment : Fragment() {
 			}
 		})
 
-//		val textView: TextView = binding.textMediaTitle
-//		moviesViewModel.response.observe(viewLifecycleOwner) {
-//			textView.text = it
-//		}
-
 		moviesViewModel.response
 		return root
 	}
-
-//	override fun onDestroyView() {
-//		super.onDestroyView()
-//		_binding = null
-//	}
 }
