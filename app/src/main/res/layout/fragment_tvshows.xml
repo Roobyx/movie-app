@@ -13,7 +13,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         style="@style/fragmentBackground"
         tools:context=".ui.view.tvshows.TVShowsFragment">
-        
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/tvShowsList"
             android:layout_width="match_parent"
@@ -24,21 +24,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:listitem="@layout/media_element" />
-
-        <!--        <TextView-->
-        <!--            android:id="@+id/text_tvshows"-->
-        <!--            style="@style/GlobalText"-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_marginStart="@dimen/small_margin"-->
-        <!--            android:layout_marginTop="@dimen/small_margin"-->
-        <!--            android:layout_marginEnd="@dimen/small_margin"-->
-        <!--            android:textAlignment="center"-->
-        <!--            android:textSize="20sp"-->
-        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
-        <!--            app:layout_constraintEnd_toEndOf="parent"-->
-        <!--            app:layout_constraintStart_toStartOf="parent"-->
-        <!--            app:layout_constraintTop_toTopOf="parent" />-->
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>

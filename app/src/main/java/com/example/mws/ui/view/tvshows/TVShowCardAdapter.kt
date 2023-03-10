@@ -9,6 +9,7 @@ import com.example.mws.data.model.TVShow
 import com.example.mws.databinding.MediaElementBinding
 import com.example.mws.utils.TVShowCardViewHolder
 
+//TODO: There must be a way to join the 2 adapters
 class TVShowCardAdapter : RecyclerView.Adapter<TVShowCardViewHolder>() {
 	var data = listOf<TVShow>()
 		set(value) {

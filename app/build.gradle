@@ -1,7 +1,10 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-parcelize'
 }
+//TODO: ask
+//apply plugin: "androidx.navigation.safeargs"
 
 android {
     namespace 'com.example.mws'
@@ -17,12 +20,10 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         buildConfigField "String", "TMDB_KEY", "${project.tmdbKey}"
     }
-
     buildFeatures {
         viewBinding true
         dataBinding true
     }
-
     buildTypes {
         release {
             minifyEnabled false

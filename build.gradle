@@ -7,6 +7,10 @@ buildscript {
         version_moshi = "1.13.0"
         version_recyclerview = "1.2.1"
         version_glide = "4.8.0"
+        version_navigation = "1.0.0"
+    }
+    dependencies {
+        classpath "android.arch.navigation:navigation-safe-args-gradle-plugin:$version_navigation"
     }
 }
 plugins {
